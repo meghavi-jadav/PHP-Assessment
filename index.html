@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Details</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Country Details</h1>
+    <table id="countryTable">
+        <thead>
+            <tr>
+                <th>Country Name</th>
+                <th>Flag</th>
+                <th>Capital</th>
+                <th>Region</th>
+                <th>Country Code</th>
+                <th>Created At</th>
+                <th>Updated At</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <h2>Add New Country</h2>
+    <form id="addCountryForm">
+        <label for="country_name">Country Name:</label>
+        <input type="text" id="country_name" name="country_name" required><br>
+        <label for="flag_image">Flag Image URL:</label>
+        <input type="text" id="flag_image" name="flag_image" required><br>
+        <label for="capital">Capital:</label>
+        <input type="text" id="capital" name="capital" required><br>
+        <label for="region">Region:</label>
+        <input type="text" id="region" name="region" required><br>
+        <label for="country_code">Country Code:</label>
+        <input type="text" id="country_code" name="country_code" required><br>
+        <button type="submit">Add Country</button>
+    </form>
+
+    <h2>Edit Country</h2>
+    <form id="editCountryForm" style="display:none;">
+        <input type="hidden" id="edit_id" name="id">
+        <label for="edit_country_name">Country Name:</label>
+        <input type="text" id="edit_country_name" name="country_name" required><br>
+        <label for="edit_flag_image">Flag Image URL:</label>
+        <input type="text" id="edit_flag_image" name="flag_image" required><br>
+        <label for="edit_capital">Capital:</label>
+        <input type="text" id="edit_capital" name="capital" required><br>
+        <label for="edit_region">Region:</label>
+        <input type="text" id="edit_region" name="region" required><br>
+        <label for="edit_country_code">Country Code:</label>
+        <input type="text" id="edit_country_code" name="country_code" required><br>
+        <button type="submit">Update Country</button>
+    </form>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
